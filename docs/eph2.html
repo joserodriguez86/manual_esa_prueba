@@ -26,7 +26,7 @@
 <meta name="author" content="Sofia Jaime" />
 
 
-<meta name="date" content="2021-10-05" />
+<meta name="date" content="2021-10-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -425,7 +425,7 @@ div.csl-indent {
 <h3><span class="header-section-number">3.2.1</span> El “método clásico”</h3>
 <div id="bases-2016-2020" class="section level4" number="3.2.1.1">
 <h4><span class="header-section-number">3.2.1.1</span> Bases 2016-2020</h4>
-<p>Como se ha presentado previamente, dependiendo del período que necesitemos analizar, encontraremos que las bases a descargar se encuentran en distintos formatos de archivo. Al día de la fecha (05 octubre, 2021) el INDEC no ha brindado su información bajo formato <code>.RData</code>.</p>
+<p>Como se ha presentado previamente, dependiendo del período que necesitemos analizar, encontraremos que las bases a descargar se encuentran en distintos formatos de archivo. Al día de la fecha (14 octubre, 2021) el INDEC no ha brindado su información bajo formato <code>.RData</code>.</p>
 <p>Como ejemplo, podemos comenzar por una primera prueba descargando la base correspondiente al tercer trimestre de 2019 en formato <code>.txt</code> (<a href="https://www.indec.gob.ar/ftp/cuadros/menusuperior/eph/EPH_usu_3_Trim_2019_txt.zip" target="_blank">link de descarga</a>). El archivo <code>.zip</code> que descarguemos contendrá un archivo <code>.txt</code> referido a la base de individuos (Usu_individual_T319.txt) y otro referido a la base de hogares (Usu_hogar_T319.txt).</p>
 <p>Como buena práctica en la organización de la información que vamos utilizando, es recomendable alojar los archivos (en este caso las bases que descarguemos) en la carpeta del proyecto con el que estemos trabajando en <strong><code>RStudio</code></strong> (en este caso, le hemos puesto el nombre “bases”). En este caso utilizaremos el comando <code>read.csv2</code>, ya que nos permite importar archivos de texto plano delimitados. Señalamos que el delimitador es <code>;</code> y que el archivo cuenta en su línea superior con los nombres de las variables <code>(header = TRUE)</code>.</p>
 <div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="eph2.html#cb185-1" aria-hidden="true" tabindex="-1"></a>eph_ind_319 <span class="ot">&lt;-</span> <span class="fu">read.csv2</span>(<span class="st">&quot;bases/Usu_individual_T319.txt&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot;;&quot;</span>,</span>

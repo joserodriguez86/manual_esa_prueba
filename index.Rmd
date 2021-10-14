@@ -11,6 +11,7 @@ biblio-style: apalike
 link-citations: yes
 github-repo: nsacco/libroESA
 description: "Manual introductorio para el estudio de la estructura social en Argentina"
+layout: default
 ---
 
 # Prefacio {-}
