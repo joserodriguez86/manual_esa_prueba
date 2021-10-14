@@ -1,0 +1,14 @@
+book_filename: "libroESA"
+delete_merged_file: false
+
+
+output_dir: "docs"
+
+language:
+  label:
+    fig: 'Gráfico '
+    tab: 'Tabla '
+    eq: 'Ecuación '
+    refs : 'Referencias'
+  ui:
+    chapter_name: "Capítulo "
